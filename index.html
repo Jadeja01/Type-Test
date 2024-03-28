@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <header>
+            <div id="shadow" class="same errors">
+                <span class="diff">Errors</span>
+                <span id="errors">0</span>
+            </div>
+            <div id="shadow" class="same cpm">
+                <span class="diff">CPM</span>
+                <span id="cpm">0</span>
+            </div>
+            <div id="shadow" class="same wpm">
+                <span class="diff">WPM</span>
+                <span id="wpm">0</span>
+            </div>
+            <div id="shadow" class="same time">
+                <span class="diff">Time</span>
+                <span id="time">60s</span>
+            </div>
+            <div id="shadow" class="same errors">
+                <span class="diff">Accuracy</span>
+                <span id="accuracy">100%</span>
+            </div>
+        </header>
+        <div id="shadow" class="gentext">Click below textarea to start testing...</div>
+        <div class="textarea">
+            <textarea name="textarea" id="textarea" cols="25" rows="10" placeholder="enter above text here" onfocus="startGame()" oninput="captureText()"></textarea>
+        </div>
+        <div id="restart" onclick="resetvalue()">Restart</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
